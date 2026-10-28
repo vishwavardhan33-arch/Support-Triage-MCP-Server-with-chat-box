@@ -1,0 +1,4 @@
+# Optional: real neural embeddings + FAISS. The app runs without these (hashing + NumPy fallbacks).
+# Install with: pip install -r requirements.txt -r requirements-ml.txt
+fastembed>=0.4.0
+faiss-cpu>=1.8.0

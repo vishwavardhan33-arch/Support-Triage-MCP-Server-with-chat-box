@@ -1,0 +1,14 @@
+[tool.ruff]
+line-length = 130
+
+[tool.ruff.lint]
+select = ["E", "F"]
+
+[tool.ruff.lint.per-file-ignores]
+# Prompt text and ticket templates are data: wrapping them would change what the model / tests see.
+"triage.py" = ["E501"]
+"data/generate_data.py" = ["E501"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

@@ -1,0 +1,1890 @@
+{
+ "meta": {
+  "dataset": "public",
+  "mode": "zero-shot",
+  "model": "openai/gpt-oss-20b",
+  "judge_model": null,
+  "embeddings": "hashing-2048",
+  "k": 3,
+  "seed": 11,
+  "date": "2026-10-28"
+ },
+ "category": {
+  "n": 200,
+  "n_errors": 0,
+  "accuracy": 0.79,
+  "ci95": [
+   0.7284,
+   0.8407
+  ],
+  "macro_f1": 0.7756,
+  "per_label": {
+   "Card Delivery & Activation": {
+    "support": 25,
+    "recall": 0.84
+   },
+   "Card Usage Problems": {
+    "support": 27,
+    "recall": 0.63
+   },
+   "Fraud & Lost Cards": {
+    "support": 16,
+    "recall": 0.5
+   },
+   "Transfers": {
+    "support": 27,
+    "recall": 0.741
+   },
+   "Top-ups": {
+    "support": 30,
+    "recall": 0.933
+   },
+   "Card Payments & Refunds": {
+    "support": 25,
+    "recall": 0.76
+   },
+   "Cash Withdrawals": {
+    "support": 15,
+    "recall": 0.867
+   },
+   "Exchange Rates & Fees": {
+    "support": 12,
+    "recall": 0.75
+   },
+   "Identity & Account": {
+    "support": 23,
+    "recall": 1.0
+   }
+  },
+  "top_confusions": [
+   {
+    "true": "Card Payments & Refunds",
+    "pred": "Exchange Rates & Fees",
+    "count": 4
+   },
+   {
+    "true": "Card Delivery & Activation",
+    "pred": "Card Usage Problems",
+    "count": 4
+   },
+   {
+    "true": "Exchange Rates & Fees",
+    "pred": "Transfers",
+    "count": 3
+   },
+   {
+    "true": "Card Usage Problems",
+    "pred": "Card Delivery & Activation",
+    "count": 3
+   },
+   {
+    "true": "Card Usage Problems",
+    "pred": "Top-ups",
+    "count": 3
+   }
+  ]
+ },
+ "parse_failures": 0,
+ "records": [
+  {
+   "id": "BE-0000",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Fraud & Lost Cards",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry to hear about the unauthorized charge on your card. Please provide the transaction details (date, amount, merchant) and we\u2019ll investigate immediately and take the necessary steps to protect your account."
+  },
+  {
+   "id": "BE-0001",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account",
+   "pred_priority": "low",
+   "response": "You can view your source of funds in the app by going to the \"Profile\" section and selecting \"Source of Funds\". If you need further assistance, let us know and we\u2019ll guide you through the steps."
+  },
+  {
+   "id": "BE-0002",
+   "true": "Exchange Rates & Fees",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. We offer competitive exchange rates for foreign currency transactions, and there are no additional fees for exchanging money from abroad. If you have any specific details or need further assistance, please let us know."
+  },
+  {
+   "id": "BE-0003",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account",
+   "pred_priority": "medium",
+   "response": "Thank you for reaching out. To verify the source of your funds, please provide the requested documents via the secure upload link in your account. Let us know if you need any assistance."
+  },
+  {
+   "id": "BE-0004",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "medium",
+   "response": "Hi, thanks for reaching out. To verify your top\u2011up, we\u2019ll need a few details such as the transaction reference and the payment method used. Please share those, and we\u2019ll guide you through the verification process."
+  },
+  {
+   "id": "BE-0005",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry to hear that your cash withdrawal is still pending. Could you please provide the transaction reference number and the date of the attempt so we can investigate the delay? We\u2019ll work to resolve this as quickly as possible."
+  },
+  {
+   "id": "BE-0006",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation",
+   "pred_priority": "medium",
+   "response": "Thank you for reaching out. To issue a new card while you\u2019re in China, we\u2019ll need your current address and a brief confirmation that you\u2019re not reporting a lost or stolen card. Please reply with that information and we\u2019ll process the delivery as quickly as possible."
+  },
+  {
+   "id": "BE-0007",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems",
+   "pred_priority": "low",
+   "response": "You can use your card anywhere that accepts Mastercard/Visa, including online merchants, in-store purchases, and ATMs worldwide. If you encounter any restrictions, let us know and we\u2019ll check your card settings. Feel free to ask if you need more details!"
+  },
+  {
+   "id": "BE-0008",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees",
+   "pred_priority": "medium",
+   "response": "I\u2019m sorry to hear that the exchange rate on your statement doesn\u2019t match what you expected. Could you please provide the transaction date, amount, and the currency you paid in so we can investigate and correct the discrepancy? We\u2019ll resolve this as quickly as possible."
+  },
+  {
+   "id": "BE-0009",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation",
+   "pred_priority": "low",
+   "response": "Sure, we can set up a temporary virtual card for you. Please confirm your account details or let us know if you'd like to proceed, and we'll send the card information shortly."
+  },
+  {
+   "id": "BE-0010",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation",
+   "pred_priority": "low",
+   "response": "Yes, we do offer a physical (non-electronic) card. You can order one through the app or website under the \"Cards\" section. Let us know if you\u2019d like us to send you a card or if you have any other questions."
+  },
+  {
+   "id": "BE-0011",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds",
+   "pred_priority": "medium",
+   "response": "I\u2019m sorry you\u2019re having trouble locating your refund. Refunds typically appear within 5\u201310 business days after the merchant processes them. Could you please provide the transaction reference or the date of the original purchase so we can investigate further?"
+  },
+  {
+   "id": "BE-0012",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers",
+   "pred_priority": "medium",
+   "response": "Thank you for reaching out. We\u2019re currently checking the status of your GBP salary deposit and will update you shortly. In the meantime, please let us know if you notice any delays or errors on your end."
+  },
+  {
+   "id": "BE-0013",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "low",
+   "response": "Sure, I can help you set up auto\u2011top up. Please go to the Top\u2011Ups section in the app, tap \"Auto\u2011Top Up\", and follow the prompts to enable it. Let me know if you need any further assistance!"
+  },
+  {
+   "id": "BE-0014",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees",
+   "pred_priority": "medium",
+   "response": "I\u2019m sorry you\u2019re having trouble buying crypto. Could you let me know which device and app version you\u2019re using, and if you see any error messages? We\u2019ll look into this and get back to you shortly."
+  },
+  {
+   "id": "BE-0015",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems",
+   "pred_priority": "medium",
+   "response": "I\u2019m sorry to hear that your contactless isn\u2019t working. Could you please let me know if you\u2019ve tried tapping the card on a different terminal or if you\u2019ve recently updated your phone\u2019s software? I\u2019ll guide you through the steps to get it working again."
+  },
+  {
+   "id": "BE-0016",
+   "true": "Exchange Rates & Fees",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers",
+   "pred_priority": "medium",
+   "response": "Thank you for reaching out. Transfer fees can vary depending on the type of transfer and the destination country. Let me check the details of your recent transaction and explain the fee that was applied."
+  },
+  {
+   "id": "BE-0017",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems",
+   "pred_priority": "medium",
+   "response": "Yes, you can freeze your card immediately through our mobile app or website. Open the app, go to the Cards section, select the card you want to freeze, and tap \"Freeze Card.\" If you need further assistance, let us know and we\u2019ll guide you through the process."
+  },
+  {
+   "id": "BE-0018",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry you\u2019re having trouble with your ATM withdrawal. Could you please let me know the ATM location, the date and time of the attempt, and any error message you saw? We\u2019ll investigate right away and get this resolved for you."
+  },
+  {
+   "id": "BE-0019",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account",
+   "pred_priority": "low",
+   "response": "Thank you for contacting us. We currently support customers in the following countries: [list of supported countries]. Please let us know your country so we can confirm your eligibility."
+  },
+  {
+   "id": "BE-0020",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds",
+   "pred_priority": "medium",
+   "response": "I\u2019m sorry to hear that your payment was cancelled. This can happen for a few reasons, such as insufficient funds, a security flag, or a merchant error. Could you please let me know the transaction date and the merchant name so I can investigate further?"
+  },
+  {
+   "id": "BE-0021",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account",
+   "pred_priority": "high",
+   "response": "I understand that you may have concerns about verifying your identity. However, completing this step is essential for us to keep your account secure and comply with regulatory requirements. If you need assistance or have questions about the process, please let us know and we\u2019ll guide you through it."
+  },
+  {
+   "id": "BE-0022",
+   "true": "Exchange Rates & Fees",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees",
+   "pred_priority": "low",
+   "response": "Yes, you can exchange currencies through our app or website. Simply go to the 'Exchange' section, select the currencies you want to swap, enter the amount, and confirm the transaction. Let us know if you need any further assistance!"
+  },
+  {
+   "id": "BE-0023",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Fraud & Lost Cards",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry to hear that your card was stolen. We\u2019ll block it right away and issue a replacement. Please confirm your identity by providing your last four SSN digits and the date of birth so we can proceed."
+  },
+  {
+   "id": "BE-0024",
+   "true": "Exchange Rates & Fees",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. Our exchange fees vary depending on the currency pair and the amount you are converting. Please let us know the currencies and amount you have in mind, and we\u2019ll provide the exact fee for your transaction."
+  },
+  {
+   "id": "BE-0025",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds",
+   "pred_priority": "medium",
+   "response": "Hi, I'm sorry to hear your refund hasn't appeared yet. Refunds usually take 5-7 business days to post; let me check the status for you and get back to you shortly."
+  },
+  {
+   "id": "BE-0026",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account",
+   "pred_priority": "medium",
+   "response": "Thank you for reaching out. To proceed with closing your account, could you please confirm your full name and the email address associated with the account? Once we have that information, we\u2019ll guide you through the final steps and confirm the closure."
+  },
+  {
+   "id": "BE-0027",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry to hear that you didn\u2019t receive your cash during the withdrawal. Could you please let us know the date, time, and location of the transaction, as well as any reference number you received? We\u2019ll investigate right away and get this resolved for you."
+  },
+  {
+   "id": "BE-0028",
+   "true": "Exchange Rates & Fees",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. The exchange fee depends on the currency pair and your account tier; you can view the exact rate in the app under the 'Rates' section. If you need a detailed breakdown, let us know and we\u2019ll be happy to assist further."
+  },
+  {
+   "id": "BE-0029",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers",
+   "pred_priority": "high",
+   "response": "Thank you for reaching out. We\u2019re looking into the status of your pending transfer and will update you shortly. In the meantime, could you please confirm the transfer reference number and the date it was initiated?"
+  },
+  {
+   "id": "BE-0030",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds",
+   "pred_priority": "medium",
+   "response": "I\u2019m sorry to hear that your payment was cancelled. Could you please provide the transaction reference number and the date of the purchase so we can investigate why the cancellation occurred? We\u2019ll look into it and get back to you with a resolution as soon as possible."
+  },
+  {
+   "id": "BE-0031",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry to hear that your top\u2011up was cancelled. This can happen if the payment fails or if we need to verify the source of funds. I\u2019ll look into the details right away and let you know what caused the cancellation and how we can resolve it."
+  },
+  {
+   "id": "BE-0032",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds",
+   "pred_priority": "low",
+   "response": "Apple\u202fPay itself does not add any extra fees to your transactions \u2013 you\u2019ll only see the standard card\u2011payment fees that apply to your card. If you\u2019d like to review the full fee schedule, you can find it in the Help section of our app or on our website."
+  },
+  {
+   "id": "BE-0033",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry you\u2019re experiencing this issue. I\u2019ll look into why your cash deposit isn\u2019t showing up right away and will keep you updated. In the meantime, could you please confirm the date and amount of the deposit so we can locate it quickly?"
+  },
+  {
+   "id": "BE-0034",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds",
+   "pred_priority": "medium",
+   "response": "Thank you for contacting us. We can review the transaction details and issue a correction or refund if needed. Please provide the transaction ID and date so we can investigate further."
+  },
+  {
+   "id": "BE-0035",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees",
+   "pred_priority": "medium",
+   "response": "I\u2019m sorry to hear that you were charged an incorrect exchange rate. Could you please provide the transaction date, amount, and the currency you used? We\u2019ll investigate and correct the charge as quickly as possible."
+  },
+  {
+   "id": "BE-0036",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry to hear that your recipient hasn\u2019t received the funds yet. Could you please provide the transfer reference number and the date you sent the money so we can investigate the delay for you?"
+  },
+  {
+   "id": "BE-0037",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry to hear you\u2019re running low on funds. Please let me know your current balance and the amount you\u2019d like to transfer, and I\u2019ll guide you through the process to ensure your account stays funded. If you need an urgent transfer, we can expedite it right away."
+  },
+  {
+   "id": "BE-0038",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems",
+   "pred_priority": "medium",
+   "response": "I\u2019m sorry to hear that your card isn\u2019t working right now. Could you let me know where you\u2019re trying to use it (online, in-store, ATM) and if you\u2019ve seen any error messages? I\u2019ll help you troubleshoot and get it back to working order as quickly as possible."
+  },
+  {
+   "id": "BE-0039",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "low",
+   "response": "Hello! When topping up with a US card, a fee of 1.5% applies (up to a maximum of $5 per top\u2011up). If you use a card issued in the EU, the top\u2011up is free. Let me know if you need any further help!"
+  },
+  {
+   "id": "BE-0040",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Fraud & Lost Cards",
+   "pred_priority": "high",
+   "response": "I'm sorry to hear that you suspect unauthorized activity on your card. We'll immediately investigate and place a temporary freeze on the card while we look into this. Please confirm your last known transaction details so we can proceed."
+  },
+  {
+   "id": "BE-0041",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems",
+   "pred_priority": "low",
+   "response": "We accept both Visa and Mastercard for payments. If you need help setting up or have any other questions, feel free to let us know."
+  },
+  {
+   "id": "BE-0042",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers",
+   "pred_priority": "medium",
+   "response": "Thank you for reaching out. Typically, domestic transfers are processed within 1\u20132 business days, while international transfers may take 3\u20135 business days depending on the destination bank. If you notice a delay beyond this window, please let us know and we\u2019ll investigate further."
+  },
+  {
+   "id": "BE-0043",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. To verify your identity, please upload a clear photo of your government\u2011issued ID and a selfie via the app\u2019s verification section. If you encounter any issues, let us know and we\u2019ll guide you through the process."
+  },
+  {
+   "id": "BE-0044",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out! We currently support manual top\u2011ups, but we\u2019re exploring automated options for the future. In the meantime, you can set up recurring transfers from your linked bank account to keep your balance topped up automatically."
+  },
+  {
+   "id": "BE-0045",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account",
+   "pred_priority": "medium",
+   "response": "I\u2019m sorry you\u2019re having trouble with the ID verification process. Could you let me know what error message you\u2019re seeing or which step is causing the issue? I\u2019ll guide you through the next steps to get your account verified as quickly as possible."
+  },
+  {
+   "id": "BE-0046",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Fraud & Lost Cards",
+   "pred_priority": "high",
+   "response": "Thank you for contacting us. We take unauthorized direct debits very seriously and will investigate this immediately. Please provide the date, amount, and reference number of the transaction so we can resolve the issue as quickly as possible."
+  },
+  {
+   "id": "BE-0047",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals",
+   "pred_priority": "medium",
+   "response": "I\u2019m sorry you\u2019re experiencing this issue. A pending cash withdrawal can take up to 24\u201348\u202fhours to clear; please check the app again in that time frame. If it still hasn\u2019t resolved, let us know and we\u2019ll investigate further for you."
+  },
+  {
+   "id": "BE-0048",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry you haven\u2019t received your new card yet. I\u2019ll check the delivery status right away and arrange an expedited shipment if needed. I\u2019ll keep you updated within the next 24\u202fhours."
+  },
+  {
+   "id": "BE-0049",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Fraud & Lost Cards",
+   "pred_priority": "high",
+   "response": "I\u2019m really sorry to hear about this. We\u2019ll immediately block your card and start an investigation into the unauthorized withdrawal. Please confirm your identity by providing the last four digits of your card and the date of the transaction."
+  },
+  {
+   "id": "BE-0050",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "low",
+   "response": "You can top up your account via bank transfer without any additional fees. If you have any further questions or need assistance with the process, feel free to let us know."
+  },
+  {
+   "id": "BE-0051",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry for the delay. We can expedite the delivery of your card and will send you a tracking number as soon as it ships. Please let me know if you need any additional assistance."
+  },
+  {
+   "id": "BE-0052",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems",
+   "pred_priority": "low",
+   "response": "Sure, I can help you with that. To update your PIN, log in to the app, go to the Cards section, select the card you want to change, and choose \"Change PIN.\" If you need further assistance, let us know!"
+  },
+  {
+   "id": "BE-0053",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. We can ship new cards to China, but please note that delivery times may vary and additional fees could apply. Let us know if you\u2019d like to proceed and we\u2019ll guide you through the process."
+  },
+  {
+   "id": "BE-0054",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account",
+   "pred_priority": "medium",
+   "response": "I\u2019m sorry you\u2019re having trouble verifying your ID. Could you let me know what error message you\u2019re seeing or which step is causing the issue? I\u2019ll guide you through the correct process to get it resolved quickly."
+  },
+  {
+   "id": "BE-0055",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation",
+   "pred_priority": "medium",
+   "response": "Thank you for reaching out. We\u2019ll check the status of your virtual card request and ensure it\u2019s activated for you. Please allow a few minutes and let us know if you still don\u2019t see it in your app."
+  },
+  {
+   "id": "BE-0056",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry you\u2019re having trouble with your transfer. Could you please let me know the amount, the recipient\u2019s details, and any error message you\u2019re seeing? I\u2019ll check our system and get back to you with a solution as soon as possible."
+  },
+  {
+   "id": "BE-0057",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals",
+   "pred_priority": "medium",
+   "response": "Thank you for reaching out. A pending status on an ATM withdrawal usually means the transaction is still being processed by the ATM network; it should clear within 24\u201348 hours. If it remains pending after that period, please let us know and we\u2019ll investigate further."
+  },
+  {
+   "id": "BE-0058",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry to hear that you didn\u2019t receive the correct amount from your ATM withdrawal. Could you please provide the ATM location, the date and time of the transaction, and the amount you were expecting? We\u2019ll investigate and get this resolved for you as quickly as possible."
+  },
+  {
+   "id": "BE-0059",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Fraud & Lost Cards",
+   "pred_priority": "high",
+   "response": "Thank you for reaching out. We will investigate the transaction immediately and trace its details for you. Please provide the transaction date, amount, and any reference number you have so we can expedite the review."
+  },
+  {
+   "id": "BE-0060",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. To update your residence details, please log in to your account, go to the Profile section, and select \"Update Address.\" If you need further assistance, let us know!"
+  },
+  {
+   "id": "BE-0061",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds",
+   "pred_priority": "medium",
+   "response": "I\u2019m sorry to hear that your payment was cancelled. Could you please provide the transaction reference number and the date of the payment so we can investigate the issue for you?"
+  },
+  {
+   "id": "BE-0062",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. The fee for card payments depends on the type of card and the merchant category. Please let us know your card type and the transaction details so we can provide the exact fee amount."
+  },
+  {
+   "id": "BE-0063",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry you\u2019re experiencing this issue. Could you please confirm the amount you topped up and the date/time of the transaction so we can investigate why the funds haven\u2019t appeared in your account? We\u2019ll resolve this as quickly as possible."
+  },
+  {
+   "id": "BE-0064",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. Unfortunately, we do not support cheque top\u2011ups at this time. You can add funds using a debit or credit card, or via bank transfer. Let us know if you need assistance with any of these methods."
+  },
+  {
+   "id": "BE-0065",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. We offer several card options, including Standard, Premium, and Business cards, each with different benefits and fees. Let me know which type you\u2019re interested in, and I can provide more details and help you apply."
+  },
+  {
+   "id": "BE-0066",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry to hear that your transfer hasn\u2019t arrived yet. Could you please provide the transfer reference number and the date it was sent so we can investigate the delay? We\u2019ll work to resolve this as quickly as possible."
+  },
+  {
+   "id": "BE-0067",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account",
+   "pred_priority": "low",
+   "response": "Sure, I can help you reset your password. Please click the \"Forgot password\" link on the login page and follow the instructions sent to your registered email address. If you encounter any issues, let me know and I\u2019ll assist further."
+  },
+  {
+   "id": "BE-0068",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. To activate your new card, simply open the app, go to the Cards section, and tap \"Activate Card\". If you encounter any issues, let us know and we\u2019ll help you through the process."
+  },
+  {
+   "id": "BE-0069",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. Yes, you can use Apple Pay to top up your account. Simply open the app, select the top\u2011up option, and choose Apple Pay as your payment method."
+  },
+  {
+   "id": "BE-0070",
+   "true": "Exchange Rates & Fees",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers",
+   "pred_priority": "medium",
+   "response": "Thank you for reaching out. I understand your concern about the transfer fee and apologize for any confusion. Let me explain our fee structure and see how we can best address this for you."
+  },
+  {
+   "id": "BE-0071",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds",
+   "pred_priority": "medium",
+   "response": "I\u2019m sorry to hear that your payment didn\u2019t go through. Could you please let me know the date, amount, and any error message you saw? I\u2019ll check the transaction status and get back to you with a solution."
+  },
+  {
+   "id": "BE-0072",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. Your new card is ready to use, but you\u2019ll need to activate it first. Simply tap the activation button in the app or call our 24/7 support line, and we\u2019ll guide you through the process."
+  },
+  {
+   "id": "BE-0073",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems",
+   "pred_priority": "low",
+   "response": "Your card PIN can be found in the \"Cards\" section of our mobile app under \"PIN & Security\". If you haven\u2019t set one yet, you can create a new PIN there. Let us know if you need further assistance!"
+  },
+  {
+   "id": "BE-0074",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. At the moment we don\u2019t support cheque top\u2011ups. You can add funds using a debit/credit card, bank transfer, or a supported e\u2011wallet. Let us know if you\u2019d like instructions for any of these options."
+  },
+  {
+   "id": "BE-0075",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation",
+   "pred_priority": "low",
+   "response": "Sure, we can help you order an additional card. Please confirm your account details or let us know if you'd like a replacement or a new card. We'll process your request promptly."
+  },
+  {
+   "id": "BE-0076",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "low",
+   "response": "Yes, your friend can top up your account using the \"Add a top\u2011up\" feature in the app. They will need your account details or a QR code to complete the transfer. Let us know if you need any further assistance!"
+  },
+  {
+   "id": "BE-0077",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. Disposable cards can be used multiple times per day, but each card has a daily spending limit that varies by your account tier. If you need a higher limit or have any other questions, let us know and we\u2019ll be happy to help."
+  },
+  {
+   "id": "BE-0078",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems",
+   "pred_priority": "medium",
+   "response": "I'm sorry to hear your card isn't working. Could you let me know if you have tried using it at a different terminal or if you received any error messages? We'll investigate and get it resolved quickly."
+  },
+  {
+   "id": "BE-0079",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals",
+   "pred_priority": "medium",
+   "response": "Thank you for reaching out. The fee you see is the standard charge for ATM withdrawals that exceed your free allowance. You can view the exact amount and your remaining free limit in the app under the \"Cash Withdrawal\" section. If you have any further questions, let us know!"
+  },
+  {
+   "id": "BE-0080",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "low",
+   "response": "Sure! Our top\u2011up limits vary by account type and region. Typically, you can top up up to $5,000 per day, but you can check the exact limit in the app under \"Top\u2011up settings\". Let me know if you need help adjusting your limit or have any other questions."
+  },
+  {
+   "id": "BE-0081",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "medium",
+   "response": "I\u2019m sorry to hear that your recent top\u2011up didn\u2019t go through. Could you please confirm the card details you used and let us know if you received any error message? We\u2019ll check the transaction status and get this resolved for you as quickly as possible."
+  },
+  {
+   "id": "BE-0082",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds",
+   "pred_priority": "low",
+   "response": "A pending payment means that the transaction has been authorized by the merchant but the funds have not yet been captured and transferred to your account. It usually clears within 1\u20133 business days. If it remains pending beyond that, let us know and we\u2019ll investigate further."
+  },
+  {
+   "id": "BE-0083",
+   "true": "Exchange Rates & Fees",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees",
+   "pred_priority": "low",
+   "response": "Sure, I can help you with that. To change your account currency from GBP to AUD, go to the Settings menu, select \"Currencies,\" and choose AUD as your preferred currency. Let me know if you need any further assistance!"
+  },
+  {
+   "id": "BE-0084",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry you\u2019re still waiting for your refund. Could you please provide the merchant name, transaction date, and the reference number so we can check the status and expedite the process for you?"
+  },
+  {
+   "id": "BE-0085",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. The fee for a SEPA transfer is \u20ac0.50 per transaction. If you have any further questions or need assistance with a transfer, please let us know."
+  },
+  {
+   "id": "BE-0086",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation",
+   "pred_priority": "low",
+   "response": "Sure! To create a one\u2011time use virtual card, open the app, go to the Cards section and tap \"Add virtual card\". Select the disposable option and follow the prompts to generate a single\u2011use card. Let me know if you need any further help!"
+  },
+  {
+   "id": "BE-0087",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. To link your new card, open the app, go to the Cards section, tap \"Add a new card,\" and follow the on\u2011screen instructions. If you encounter any issues, let us know and we\u2019ll help you through it."
+  },
+  {
+   "id": "BE-0088",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds",
+   "pred_priority": "medium",
+   "response": "Thank you for contacting us. We can look into the charge you\u2019re seeing. Please let us know the date, amount, and merchant name so we can investigate further."
+  },
+  {
+   "id": "BE-0089",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "low",
+   "response": "Yes, you can verify a top\u2011up by checking the confirmation email or the transaction details in the app. If you need further assistance, let us know and we\u2019ll guide you through the process."
+  },
+  {
+   "id": "BE-0090",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation",
+   "pred_priority": "medium",
+   "response": "Thank you for reaching out. Could you please provide your order or account number so we can check the status of your card delivery? We\u2019ll let you know the expected arrival date as soon as possible."
+  },
+  {
+   "id": "BE-0091",
+   "true": "Exchange Rates & Fees",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees",
+   "pred_priority": "low",
+   "response": "Yes, our platform supports multiple currencies. You can add and manage them in your account settings under the \"Currencies\" section. Let us know if you need help setting up a specific currency."
+  },
+  {
+   "id": "BE-0092",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems",
+   "pred_priority": "medium",
+   "response": "If you\u2019ve entered your PIN too many times, your card will be temporarily blocked. Please use the app\u2019s \u2018Unblock PIN\u2019 feature or call our 24/7 support line to reset it. Let us know if you need further assistance."
+  },
+  {
+   "id": "BE-0093",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account",
+   "pred_priority": "low",
+   "response": "You can verify your identity using a government\u2011issued photo ID, a recent utility bill, or a bank statement. If you need further assistance, just let us know."
+  },
+  {
+   "id": "BE-0094",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals",
+   "pred_priority": "low",
+   "response": "Our card is accepted at any ATM that displays the Visa/Mastercard logos. If you\u2019re looking for a specific network or have a particular location in mind, let us know and we\u2019ll confirm its compatibility for you."
+  },
+  {
+   "id": "BE-0095",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers",
+   "pred_priority": "high",
+   "response": "Thank you for reaching out. We\u2019re sorry to hear that your balance hasn\u2019t updated after the transfer. Could you please provide the transfer reference number and the date/time it was initiated so we can investigate promptly?"
+  },
+  {
+   "id": "BE-0096",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "high",
+   "response": "Thank you for reaching out. We\u2019re looking into the status of your cheque deposit and will update you shortly. In the meantime, could you please confirm the cheque reference number and the date it was sent?"
+  },
+  {
+   "id": "BE-0097",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds",
+   "pred_priority": "medium",
+   "response": "I\u2019m sorry to hear you\u2019ve been charged twice for the same transaction. Could you please provide the transaction ID and the date it occurred so we can investigate and issue a refund as soon as possible?"
+  },
+  {
+   "id": "BE-0098",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "medium",
+   "response": "We\u2019re sorry you\u2019re experiencing trouble with your crypto top\u2011up. Unfortunately, we don\u2019t support cryptocurrency for top\u2011ups, so the transaction was automatically refunded. If you\u2019d like to add funds using a supported method, let us know and we\u2019ll guide you through the process."
+  },
+  {
+   "id": "BE-0099",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals",
+   "pred_priority": "medium",
+   "response": "Thank you for reaching out. The exchange rate applied to cash withdrawals is based on the rate at the time of the transaction and may differ from the rate shown in the app. If you believe there's an error, we can review the details and provide clarification."
+  },
+  {
+   "id": "BE-0100",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry to hear that your card was retained by the ATM. Please contact our 24/7 support line at 1\u2011800\u2011BANK\u2011HELP or use the app to request a replacement card right away. We\u2019ll also investigate the ATM incident to prevent future occurrences."
+  },
+  {
+   "id": "BE-0101",
+   "true": "Exchange Rates & Fees",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees",
+   "pred_priority": "low",
+   "response": "Sure! We use the real\u2011time interbank market rates, updated every few minutes, to calculate the exchange rate applied to your transactions. If you\u2019d like more details on how the rate is calculated, just let us know!"
+  },
+  {
+   "id": "BE-0102",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems",
+   "pred_priority": "low",
+   "response": "You can use contactless payments right away\u2014no prior regular payment is required. If you encounter any issues, let us know and we\u2019ll help you troubleshoot."
+  },
+  {
+   "id": "BE-0103",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation",
+   "pred_priority": "low",
+   "response": "Sure, we can help you add a second card for your daughter. Please let us know her details and we\u2019ll guide you through the process. If you have any questions, feel free to ask!"
+  },
+  {
+   "id": "BE-0104",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account",
+   "pred_priority": "medium",
+   "response": "I\u2019m sorry to hear you\u2019re unhappy with our service. We can help you close your account\u2014could you please confirm your full name and the email address linked to the account so we can proceed? If you have any questions or need assistance with the process, let us know."
+  },
+  {
+   "id": "BE-0105",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation",
+   "pred_priority": "low",
+   "response": "Thank you for letting us know you\u2019ve received your new card. To activate it, simply tap the activation button in the app or call our 24/7 support line. If you encounter any issues, let us know and we\u2019ll help you right away."
+  },
+  {
+   "id": "BE-0106",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account",
+   "pred_priority": "low",
+   "response": "I\u2019m sorry you\u2019re having trouble locating your password. Please use the \"Forgot password\" link on our login page to reset it securely. If you need further assistance, let us know and we\u2019ll help you right away."
+  },
+  {
+   "id": "BE-0107",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "medium",
+   "response": "Thank you for reaching out. Could you please provide the date and amount of the top\u2011up in question? We\u2019ll check our records and let you know whether the transaction was reversed or still pending."
+  },
+  {
+   "id": "BE-0108",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. Our accounts are available to individuals who meet the minimum age requirement of 18 years. If your daughter is under 18, she would need to open an account with a parent or guardian as a joint account holder. Let us know if you\u2019d like more details or assistance with the application process."
+  },
+  {
+   "id": "BE-0109",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry to hear that your transfer didn\u2019t go through. Could you please share the transfer reference number and the date it was attempted? We\u2019ll investigate the issue and get back to you as soon as possible."
+  },
+  {
+   "id": "BE-0110",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation",
+   "pred_priority": "low",
+   "response": "Sure, I can help you add your card back to the app. Open the app, tap on the \"Cards\" tab, then select \"Add a card\" and follow the prompts to scan or enter your card details. If you run into any issues, let me know and we\u2019ll troubleshoot together."
+  },
+  {
+   "id": "BE-0111",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers",
+   "pred_priority": "medium",
+   "response": "I\u2019m sorry you\u2019re having trouble with the transfer. Could you please let me know the beneficiary\u2019s details and any error message you received? I\u2019ll check the status and help you resolve it."
+  },
+  {
+   "id": "BE-0112",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees",
+   "pred_priority": "medium",
+   "response": "Sure, I'd be happy to check the rate for you. Please let me know the currency pair and the amount you used, and I'll confirm if the rate applied matches our standard rate."
+  },
+  {
+   "id": "BE-0113",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account",
+   "pred_priority": "medium",
+   "response": "I\u2019m sorry you\u2019re having trouble with identity verification. Could you let me know which verification method you\u2019re trying to use and if you\u2019re seeing any error messages? I\u2019ll guide you through the steps to get your account verified as quickly as possible."
+  },
+  {
+   "id": "BE-0114",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "low",
+   "response": "Hi, thank you for reaching out. The top\u2011up verification code is usually sent to the email address or phone number linked to your account. If you haven\u2019t received it, please check your spam folder or let us know so we can resend it."
+  },
+  {
+   "id": "BE-0115",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry to hear that your international transfer is still pending. I\u2019ll check the status right away and let you know if any additional information is needed to expedite the process. Thank you for your patience."
+  },
+  {
+   "id": "BE-0116",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry you\u2019re still waiting for the $1.00 reversal \u2013 that\u2019s definitely not the experience we aim for. I\u2019ve escalated this to our refunds team and they\u2019ll investigate the delay and get it resolved as quickly as possible. I\u2019ll keep you updated and you can expect a follow\u2011up within 24\u202fhours."
+  },
+  {
+   "id": "BE-0117",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out! You can set up automatic top\u2011ups by going to the Top\u2011Ups section in the app, selecting \"Auto\u2011Top\u2011Up,\" and choosing your preferred amount and frequency. If you need any further assistance, just let us know."
+  },
+  {
+   "id": "BE-0118",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry to hear about the unexpected charge. While disputes are ideally filed within 60 days, we can still review the transaction for you. Please provide the transaction details and any supporting evidence, and we\u2019ll investigate further."
+  },
+  {
+   "id": "BE-0119",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry to hear that your landlord hasn\u2019t received the transfer yet. Could you please provide the transfer reference number and the date you initiated the payment so we can investigate the delay and get this resolved as quickly as possible?"
+  },
+  {
+   "id": "BE-0120",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry you\u2019re experiencing a delay with your top\u2011up. Our system is currently processing a higher volume of transactions, which can extend the time it takes to reflect in your account. We\u2019re monitoring the situation closely and will notify you as soon as the funds are available. If you need immediate access, please let us know and we\u2019ll explore alternative options."
+  },
+  {
+   "id": "BE-0121",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems",
+   "pred_priority": "medium",
+   "response": "Hi, I\u2019m sorry to hear your PIN is blocked. To unblock it, please log in to the app, go to the Card section, and select \u2018Reset PIN\u2019. If you\u2019re unable to do this, let us know and we\u2019ll verify your identity and reset it for you. Let me know if you need any further assistance."
+  },
+  {
+   "id": "BE-0122",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation",
+   "pred_priority": "low",
+   "response": "Sure! You can find your virtual card in the Cards section of the app. Open the app, tap on the card icon, and then select the \u2018Virtual Card\u2019 tab to view or generate a new virtual card. Let me know if you need any further assistance."
+  },
+  {
+   "id": "BE-0123",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. To order a new card, simply log in to the app, go to the Cards section, and select \"Order new card.\" If you need any further assistance, let us know!"
+  },
+  {
+   "id": "BE-0124",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry to hear about the unexpected withdrawal. Please provide the date, time, and location of the transaction so we can investigate and secure your account immediately. We\u2019ll keep you updated on the progress."
+  },
+  {
+   "id": "BE-0125",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees",
+   "pred_priority": "medium",
+   "response": "I\u2019m sorry to hear that you\u2019re experiencing an issue with the exchange rate on your recent purchase. Could you please provide the transaction details (date, amount, and currency) so we can investigate and correct any discrepancy? We\u2019ll work to resolve this as quickly as possible."
+  },
+  {
+   "id": "BE-0126",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "low",
+   "response": "Sure, we can help you set a limit on your top\u2011up amount. Please let us know the maximum amount you\u2019d like to set, and we\u2019ll apply it to your account right away. If you need any further assistance, feel free to ask."
+  },
+  {
+   "id": "BE-0127",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "low",
+   "response": "You can add money to your account using a bank transfer, debit card, or credit card. If you prefer, you can also use a supported e-wallet or a direct top\u2011up service. Let us know if you need step\u2011by\u2011step instructions for any of these methods."
+  },
+  {
+   "id": "BE-0128",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry you\u2019re having trouble with the ATM. Please let us know the ATM\u2019s location and the time of the incident so we can investigate and retrieve your card as quickly as possible."
+  },
+  {
+   "id": "BE-0129",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Fraud & Lost Cards",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry to hear that your card was taken by an ATM. Please let us know the ATM location and the time it happened so we can block the card immediately and start a replacement. If you suspect any unauthorized activity, we\u2019ll also review your recent transactions right away."
+  },
+  {
+   "id": "BE-0130",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers",
+   "pred_priority": "medium",
+   "response": "A transfer can be declined for several reasons, such as insufficient funds, exceeding daily limits, or compliance checks. If you\u2019re seeing a decline message, please double\u2011check the account balance and limits, and ensure the recipient details are correct. If the issue persists, let us know the exact error code and we\u2019ll investigate further."
+  },
+  {
+   "id": "BE-0131",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. Your card is currently on its way to the United States and should arrive within 5\u20137 business days. If you need a more precise delivery estimate, please let us know your ZIP code and we\u2019ll check the shipment status for you."
+  },
+  {
+   "id": "BE-0132",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account",
+   "pred_priority": "low",
+   "response": "We require identity verification to comply with regulatory standards and to protect your account from fraud. This helps us confirm that you are the legitimate account holder and ensures the security of your funds. If you have any concerns or need assistance with the verification process, please let us know."
+  },
+  {
+   "id": "BE-0133",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems",
+   "pred_priority": "low",
+   "response": "Yes, we accept both Visa and Mastercard for all transactions. If you need help setting up or have any other questions, feel free to let us know."
+  },
+  {
+   "id": "BE-0134",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "low",
+   "response": "You can check the status of your top\u2011up in the app by going to the \"Payments\" section and selecting \"Top\u2011ups\". There you\u2019ll see a list of recent top\u2011ups and their current status. If you still don\u2019t see your amount, let us know and we\u2019ll investigate further."
+  },
+  {
+   "id": "BE-0135",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals",
+   "pred_priority": "low",
+   "response": "Hello, thank you for reaching out. The fee you see is the standard charge for cash withdrawals made at ATMs outside our network. If you believe this fee is incorrect, please let us know and we can investigate further."
+  },
+  {
+   "id": "BE-0136",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry to hear about the issue with your payment. We\u2019ll investigate immediately and work to correct it before your rent deadline. Could you please provide the transaction reference and the amount so we can expedite the resolution?"
+  },
+  {
+   "id": "BE-0137",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry you\u2019re still waiting for your refund. Could you please provide the transaction reference or the date of the purchase so we can check the status with the merchant and expedite the process? We\u2019ll keep you updated as soon as we have more information."
+  },
+  {
+   "id": "BE-0138",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. Your friends can top up your account by using the \"Add a Friend\" feature in the app or by sharing your unique top\u2011up link. If you need further assistance, let us know!"
+  },
+  {
+   "id": "BE-0139",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "low",
+   "response": "Hi! The maximum top\u2011up amount depends on your account type and verification level. For most users the daily limit is \u00a35,000, but you can check your exact limit in the app under \"Top up\" or let us know if you need a higher limit."
+  },
+  {
+   "id": "BE-0140",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. Currently, we only support adding funds via debit cards and certain credit cards; American Express is not supported for top\u2011ups at this time. If you have any other questions or need alternative funding options, please let us know."
+  },
+  {
+   "id": "BE-0141",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems",
+   "pred_priority": "low",
+   "response": "All ATMs that display the Visa/Mastercard logo will accept your card. If you need a list of specific ATMs in your area, you can use the ATM locator on our mobile app or website. Let us know if you encounter any issues when you try to withdraw cash."
+  },
+  {
+   "id": "BE-0142",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry you\u2019re having trouble verifying your ID. Could you let me know what error message you\u2019re seeing or which step is failing? I\u2019ll look into it right away and guide you through the process."
+  },
+  {
+   "id": "BE-0143",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "medium",
+   "response": "Sure, I can help you locate the verification code for your top\u2011up card. The code is usually printed on the back of the card or can be found in the card\u2019s documentation. If you\u2019re still having trouble, let me know and I\u2019ll guide you through the next steps."
+  },
+  {
+   "id": "BE-0144",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation",
+   "pred_priority": "low",
+   "response": "Your PIN will be sent to you via SMS or email within 24 hours of your card being activated. If you haven\u2019t received it by then, please let us know and we\u2019ll resend it promptly."
+  },
+  {
+   "id": "BE-0145",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account",
+   "pred_priority": "medium",
+   "response": "I\u2019m sorry to hear you\u2019re unhappy. To proceed with deleting your account, please confirm your identity by providing your full name and the last four digits of your account number. Once verified, we\u2019ll process the deletion and confirm once it\u2019s complete."
+  },
+  {
+   "id": "BE-0146",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "low",
+   "response": "Hello! The fee for topping up your card depends on the method you choose. If you use a debit card, there is typically no fee, while credit card top-ups may incur a small charge. Let me know if you need details for a specific method."
+  },
+  {
+   "id": "BE-0147",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. To add your salary details in GBP, go to the app\u2019s Settings > Salary & Income section and select GBP as your currency. If you need further assistance, let us know!"
+  },
+  {
+   "id": "BE-0148",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Fraud & Lost Cards",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry to hear that you suspect unauthorized activity on your card. Please contact our 24/7 fraud hotline immediately to report the transaction and we\u2019ll freeze your card to prevent further use. We\u2019ll also investigate the charge and guide you through the refund process."
+  },
+  {
+   "id": "BE-0149",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account",
+   "pred_priority": "low",
+   "response": "Congratulations on your marriage! To update your account name, please provide your new legal name and a copy of your marriage certificate. Once we receive the documents, we\u2019ll process the change promptly."
+  },
+  {
+   "id": "BE-0150",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems",
+   "pred_priority": "low",
+   "response": "You can create multiple disposable virtual cards directly from the app. Open the Cards section, tap \"Add disposable card\" and repeat the process for each card you need. If you run into any issues, let us know and we\u2019ll guide you through it."
+  },
+  {
+   "id": "BE-0151",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry to hear that your top\u2011up didn\u2019t go through. Could you please let me know the amount you tried to add and any error message you saw? I\u2019ll investigate right away and get this resolved for you."
+  },
+  {
+   "id": "BE-0152",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry you\u2019re having trouble with the ATM. Could you please let me know which ATM you used, the time of the attempt, and whether you received any error message? We\u2019ll investigate right away and get this resolved for you."
+  },
+  {
+   "id": "BE-0153",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers",
+   "pred_priority": "high",
+   "response": "Thank you for reaching out. US transfers typically take 3\u20135 business days to arrive, depending on the sending bank\u2019s processing time. Please check the transfer status in your app or let us know if it has been longer than 7 days, and we\u2019ll investigate further."
+  },
+  {
+   "id": "BE-0154",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. To update your address, please log in to your account, go to the Profile section, and select \"Edit Address.\" If you need further assistance, let us know!"
+  },
+  {
+   "id": "BE-0155",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. Could you please let us know which transaction the fee appears on (e.g., a transfer, card payment, or exchange) and the date it was charged? Once we have that information, we can investigate the fee and explain why it was applied."
+  },
+  {
+   "id": "BE-0156",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds",
+   "pred_priority": "medium",
+   "response": "Thank you for reaching out. A pending transaction means the merchant has authorized the amount but the final settlement hasn't completed yet; it usually clears within 1\u20133 business days. If it remains pending beyond that, let us know and we\u2019ll investigate further."
+  },
+  {
+   "id": "BE-0157",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation",
+   "pred_priority": "low",
+   "response": "Thank you for your interest in our Visa card. We can help you start the application process right away. Please let us know if you need any specific information or assistance to complete the application."
+  },
+  {
+   "id": "BE-0158",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. We\u2019ll review the statement and identify the source of the extra charges. Please allow us 24\u201348 hours to investigate and we\u2019ll update you with the findings."
+  },
+  {
+   "id": "BE-0159",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. Top\u2011up fees depend on the method you choose: card top\u2011ups are free, while bank transfers may incur a small fee depending on your bank. If you let us know your preferred top\u2011up method, we can give you the exact fee details."
+  },
+  {
+   "id": "BE-0160",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. Our accounts currently do not support cash deposits; you can add funds via bank transfer or card top\u2011up instead. If you need assistance setting up one of those methods, please let us know and we\u2019ll guide you through the process."
+  },
+  {
+   "id": "BE-0161",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account",
+   "pred_priority": "medium",
+   "response": "Thank you for reaching out. To protect your account, we\u2019ll need to verify your identity and temporarily lock your phone access. Please let us know a convenient time for a quick verification call or provide the requested details via our secure portal."
+  },
+  {
+   "id": "BE-0162",
+   "true": "Exchange Rates & Fees",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees",
+   "pred_priority": "medium",
+   "response": "Thank you for reaching out. Could you please let us know which currencies you would like to exchange and the amount you have in mind? Once we have that information, we can provide you with the current rates and guide you through the process."
+  },
+  {
+   "id": "BE-0163",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry you\u2019re experiencing a delay with your top\u2011up. Our system shows the transaction is still pending, which can happen if the payment gateway is processing. We\u2019ll investigate and update you within the next 24\u202fhours\u2014thank you for your patience."
+  },
+  {
+   "id": "BE-0164",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds",
+   "pred_priority": "medium",
+   "response": "Thank you for reaching out. Could you please provide the transaction details (date, amount, merchant) so we can verify why it may have been declined? In the meantime, double\u2011check your account balance to ensure sufficient funds are available."
+  },
+  {
+   "id": "BE-0165",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers",
+   "pred_priority": "medium",
+   "response": "Thank you for reaching out. US transfers typically take 1\u20133 business days to arrive, depending on the sending bank\u2019s processing times. If you need a more precise estimate, please let us know the transfer date and amount."
+  },
+  {
+   "id": "BE-0166",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems",
+   "pred_priority": "medium",
+   "response": "I\u2019m sorry you\u2019re experiencing difficulties with your card. Could you please let me know the last three digits of the card, the merchant name, and the exact error message you received? I\u2019ll check our system for any issues and get back to you shortly."
+  },
+  {
+   "id": "BE-0167",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers",
+   "pred_priority": "medium",
+   "response": "Thank you for reaching out. Transfers typically take 1\u20133 business days to complete, depending on the banks involved. Could you please provide the transfer reference number or the date you initiated the transfer so we can check its status for you?"
+  },
+  {
+   "id": "BE-0168",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds",
+   "pred_priority": "medium",
+   "response": "Thank you for contacting us. We can help you with the incorrect charge on your recent purchase. Please provide the transaction reference and the amount you were charged, and we will initiate a refund for you."
+  },
+  {
+   "id": "BE-0169",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account",
+   "pred_priority": "low",
+   "response": "The minimum age to open an account with us is 18 years old. If you are under 18, a parent or legal guardian can open a joint account on your behalf. Let us know if you need any further assistance!"
+  },
+  {
+   "id": "BE-0170",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. We currently issue cards only to residents of the UK. If you plan to move to the UK in the future, you can apply for a card then. Let us know if you have any other questions!"
+  },
+  {
+   "id": "BE-0171",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems",
+   "pred_priority": "medium",
+   "response": "Hi, thanks for reaching out. Virtual cards can be rejected if the merchant doesn\u2019t support virtual card payments or if the card has reached its spending limit. Please check the merchant\u2019s payment method and ensure your virtual card is active and has sufficient balance. If the issue persists, let us know and we\u2019ll investigate further."
+  },
+  {
+   "id": "BE-0172",
+   "true": "Exchange Rates & Fees",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. We use the real\u2011time interbank exchange rate, updated every minute, for all currency conversions. If you need a specific rate for a recent transaction, let us know and we\u2019ll provide the exact figure."
+  },
+  {
+   "id": "BE-0173",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals",
+   "pred_priority": "medium",
+   "response": "Thank you for reaching out. Cash withdrawals typically settle within 24\u201348 hours, depending on the ATM and your bank\u2019s processing times. If you notice a delay beyond that window, please let us know and we\u2019ll investigate further."
+  },
+  {
+   "id": "BE-0174",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems",
+   "pred_priority": "low",
+   "response": "A disposable virtual card can be used only once \u2013 after the transaction it is automatically deactivated. If you need another card, simply generate a new disposable card from the app. Let us know if you need help creating one."
+  },
+  {
+   "id": "BE-0175",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation",
+   "pred_priority": "low",
+   "response": "Yes, you can order a second card. Please let us know the name and address you\u2019d like it sent to, and we\u2019ll process the request right away. If you have any other questions, feel free to ask!"
+  },
+  {
+   "id": "BE-0176",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems",
+   "pred_priority": "medium",
+   "response": "I\u2019m sorry to hear that your card was declined. Could you please let me know if you\u2019ve recently reached your spending limit or if there were any error messages? I\u2019ll check your account and get back to you with a solution."
+  },
+  {
+   "id": "BE-0177",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account",
+   "pred_priority": "low",
+   "response": "Sure, I'd be happy to explain how verification codes work. For most actions, we send a one\u2011time code to the phone number or email you have on file. If you haven\u2019t received it, let me know and I\u2019ll help you resend or troubleshoot the issue."
+  },
+  {
+   "id": "BE-0178",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry to hear your phone was stolen. Please let us verify your identity so we can secure your account and help you regain access\u2014either through our web portal or by calling our support line. We\u2019ll guide you through the steps to reset your login and protect your funds."
+  },
+  {
+   "id": "BE-0179",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems",
+   "pred_priority": "low",
+   "response": "Sure, you can change your PIN in a few simple ways. You can do it at any ATM that accepts our cards, or through our mobile app by navigating to the 'Cards' section and selecting 'Change PIN'. Let us know if you need any further assistance!"
+  },
+  {
+   "id": "BE-0180",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. Our cards are accepted at any merchant that supports Visa/Mastercard worldwide, including online, in-store, and mobile payments. If you have a specific location in mind, let us know and we can confirm its compatibility."
+  },
+  {
+   "id": "BE-0181",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. To update your personal information, please log in to your account, go to the Profile section, and edit the details you wish to change. If you encounter any issues, let us know and we\u2019ll be happy to assist further."
+  },
+  {
+   "id": "BE-0182",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. To enable contactless on your card, simply tap it on a contactless reader and confirm the transaction on your phone. If it still doesn\u2019t work, please let us know and we\u2019ll guide you through a quick reset or replacement if needed."
+  },
+  {
+   "id": "BE-0183",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds",
+   "pred_priority": "high",
+   "response": "Thank you for reaching out. We\u2019ll investigate the transaction you\u2019re unsure about. Could you please provide the date, amount, and any reference number so we can look into it promptly?"
+  },
+  {
+   "id": "BE-0184",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds",
+   "pred_priority": "low",
+   "response": "It\u2019s common for the merchant name that appears on your statement to differ from the name you see on the receipt or website. This is usually due to the way the merchant\u2019s payment processor reports the transaction. If you\u2019re concerned about a specific payment, let us know the details and we\u2019ll look into it for you."
+  },
+  {
+   "id": "BE-0185",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out! We support topping up with a variety of cards and currencies. Please let us know which specific card or currency you\u2019re interested in, and we\u2019ll confirm availability for you."
+  },
+  {
+   "id": "BE-0186",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account",
+   "pred_priority": "medium",
+   "response": "I\u2019m sorry you\u2019re having trouble with identity verification. Let\u2019s walk through the steps together\u2014please confirm the documents you\u2019re trying to upload and any error messages you\u2019ve seen. If you can share those details, we\u2019ll resolve this quickly."
+  },
+  {
+   "id": "BE-0187",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Fraud & Lost Cards",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry to hear your card may have been stolen. We\u2019ll block it right away and issue a replacement card for you. Please confirm your identity by providing your last four account digits and the date of birth so we can proceed quickly."
+  },
+  {
+   "id": "BE-0188",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups",
+   "pred_priority": "low",
+   "response": "Thank you for reaching out. There are no fees for topping up your account using a standard debit or credit card. If you have any other questions, feel free to let us know!"
+  },
+  {
+   "id": "BE-0189",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers",
+   "pred_priority": "high",
+   "response": "I\u2019m sorry to hear that your transfer was declined. Could you please provide the transfer reference number and the date it was attempted so we can investigate the issue for you? We\u2019ll work to resolve this as quickly as possible."
+  },
+  {
+   "id": "BE-0190",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account",
+   "pred_priority": "medium",
+   "response": "Thank you for reaching out. To verify your funds, we\u2019ll need to review a few documents that confirm the source of the money in your account. Please upload the required documents through the secure link in your app, and we\u2019ll process the verification promptly."
+  },
+  {
+   "id": "BE-0191",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds",
+   "pred_priority": "medium",
+   "response": "I\u2019m sorry to hear about the duplicate charges on your card. Could you please provide the dates, amounts, and merchant names for the transactions in question so we can investigate and issue a refund as soon as possible? Thank you for your patience while we resolve this."
+  },
+  {
+   "id": "BE-0192",
+   "true": "Exchange Rates & Fees",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers",
+   "pred_priority": "medium",
+   "response": "Thank you for reaching out. Transfer fees can apply depending on the type of transfer and the destination country. Let me explain the fee structure and see if we can find a more cost\u2011effective option for you."
+  },
+  {
+   "id": "BE-0193",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems",
+   "pred_priority": "medium",
+   "response": "I\u2019m sorry you\u2019re having trouble with your card payment. Could you please let me know the merchant name, the amount, and any error message you received? That will help us investigate the issue quickly."
+  },
+  {
+   "id": "BE-0194",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers",
+   "pred_priority": "medium",
+   "response": "Thank you for reaching out. To help you cancel the transaction, could you please provide the transaction ID, date, and amount? Once we have those details, we can proceed with the cancellation process for you."
+  },
+  {
+   "id": "BE-0195",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals",
+   "pred_priority": "medium",
+   "response": "Thank you for reaching out. The fee you see on your cash withdrawal is part of our standard withdrawal fee structure, which applies after you exceed your free monthly limit. If you\u2019d like to review your current limit or explore fee\u2011free options, let us know and we\u2019ll be happy to help."
+  },
+  {
+   "id": "BE-0196",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds",
+   "pred_priority": "medium",
+   "response": "Thank you for reaching out. Your card payment is currently pending and should complete within 24\u201348 hours. If it remains pending beyond that, please let us know and we\u2019ll investigate further."
+  },
+  {
+   "id": "BE-0197",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals",
+   "pred_priority": "medium",
+   "response": "Thank you for contacting us. Could you please provide the date and amount of the cash withdrawal in question so we can investigate? We\u2019ll review your account and get back to you shortly."
+  },
+  {
+   "id": "BE-0198",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems",
+   "pred_priority": "low",
+   "response": "I\u2019m sorry to hear your card isn\u2019t working. Please let us know if it\u2019s physically damaged or if you\u2019re experiencing a specific issue, and we\u2019ll arrange a replacement for you. In the meantime, you can still use your card for online transactions if it\u2019s still active."
+  },
+  {
+   "id": "BE-0199",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems",
+   "pred_priority": "medium",
+   "response": "It looks like your PIN has been blocked after several incorrect attempts. To unblock it, please visit a nearby ATM and follow the on-screen instructions, or you can reset your PIN through the mobile app under the 'Security' section. If you need further assistance, let us know and we\u2019ll guide you through the process."
+  }
+ ]
+}

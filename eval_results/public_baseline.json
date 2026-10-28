@@ -1,0 +1,1490 @@
+{
+ "meta": {
+  "dataset": "public",
+  "mode": "baseline",
+  "model": "none",
+  "judge_model": null,
+  "embeddings": "hashing-2048",
+  "k": 3,
+  "seed": 11,
+  "date": "2026-10-28"
+ },
+ "category": {
+  "n": 200,
+  "n_errors": 0,
+  "accuracy": 0.685,
+  "ci95": [
+   0.6176,
+   0.7454
+  ],
+  "macro_f1": 0.6872,
+  "per_label": {
+   "Card Delivery & Activation": {
+    "support": 25,
+    "recall": 0.88
+   },
+   "Card Usage Problems": {
+    "support": 27,
+    "recall": 0.63
+   },
+   "Fraud & Lost Cards": {
+    "support": 16,
+    "recall": 0.625
+   },
+   "Transfers": {
+    "support": 27,
+    "recall": 0.778
+   },
+   "Top-ups": {
+    "support": 30,
+    "recall": 0.467
+   },
+   "Card Payments & Refunds": {
+    "support": 25,
+    "recall": 0.68
+   },
+   "Cash Withdrawals": {
+    "support": 15,
+    "recall": 0.667
+   },
+   "Exchange Rates & Fees": {
+    "support": 12,
+    "recall": 0.75
+   },
+   "Identity & Account": {
+    "support": 23,
+    "recall": 0.739
+   }
+  },
+  "top_confusions": [
+   {
+    "true": "Card Usage Problems",
+    "pred": "Card Delivery & Activation",
+    "count": 6
+   },
+   {
+    "true": "Top-ups",
+    "pred": "Identity & Account",
+    "count": 4
+   },
+   {
+    "true": "Card Payments & Refunds",
+    "pred": "Exchange Rates & Fees",
+    "count": 4
+   },
+   {
+    "true": "Transfers",
+    "pred": "Top-ups",
+    "count": 4
+   },
+   {
+    "true": "Top-ups",
+    "pred": "Card Delivery & Activation",
+    "count": 4
+   }
+  ]
+ },
+ "parse_failures": 0,
+ "records": [
+  {
+   "id": "BE-0000",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Fraud & Lost Cards"
+  },
+  {
+   "id": "BE-0001",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account"
+  },
+  {
+   "id": "BE-0002",
+   "true": "Exchange Rates & Fees",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0003",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account"
+  },
+  {
+   "id": "BE-0004",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account"
+  },
+  {
+   "id": "BE-0005",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals"
+  },
+  {
+   "id": "BE-0006",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0007",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems"
+  },
+  {
+   "id": "BE-0008",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees"
+  },
+  {
+   "id": "BE-0009",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0010",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Fraud & Lost Cards"
+  },
+  {
+   "id": "BE-0011",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds"
+  },
+  {
+   "id": "BE-0012",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers"
+  },
+  {
+   "id": "BE-0013",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0014",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0015",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems"
+  },
+  {
+   "id": "BE-0016",
+   "true": "Exchange Rates & Fees",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees"
+  },
+  {
+   "id": "BE-0017",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0018",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals"
+  },
+  {
+   "id": "BE-0019",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems"
+  },
+  {
+   "id": "BE-0020",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds"
+  },
+  {
+   "id": "BE-0021",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account"
+  },
+  {
+   "id": "BE-0022",
+   "true": "Exchange Rates & Fees",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees"
+  },
+  {
+   "id": "BE-0023",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0024",
+   "true": "Exchange Rates & Fees",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees"
+  },
+  {
+   "id": "BE-0025",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds"
+  },
+  {
+   "id": "BE-0026",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers"
+  },
+  {
+   "id": "BE-0027",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals"
+  },
+  {
+   "id": "BE-0028",
+   "true": "Exchange Rates & Fees",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0029",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers"
+  },
+  {
+   "id": "BE-0030",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds"
+  },
+  {
+   "id": "BE-0031",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds"
+  },
+  {
+   "id": "BE-0032",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems"
+  },
+  {
+   "id": "BE-0033",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers"
+  },
+  {
+   "id": "BE-0034",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees"
+  },
+  {
+   "id": "BE-0035",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds"
+  },
+  {
+   "id": "BE-0036",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers"
+  },
+  {
+   "id": "BE-0037",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers"
+  },
+  {
+   "id": "BE-0038",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems"
+  },
+  {
+   "id": "BE-0039",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Fraud & Lost Cards"
+  },
+  {
+   "id": "BE-0040",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Fraud & Lost Cards"
+  },
+  {
+   "id": "BE-0041",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems"
+  },
+  {
+   "id": "BE-0042",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers"
+  },
+  {
+   "id": "BE-0043",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account"
+  },
+  {
+   "id": "BE-0044",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0045",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account"
+  },
+  {
+   "id": "BE-0046",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Fraud & Lost Cards"
+  },
+  {
+   "id": "BE-0047",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0048",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0049",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Fraud & Lost Cards"
+  },
+  {
+   "id": "BE-0050",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers"
+  },
+  {
+   "id": "BE-0051",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0052",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0053",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0054",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account"
+  },
+  {
+   "id": "BE-0055",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0056",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers"
+  },
+  {
+   "id": "BE-0057",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals"
+  },
+  {
+   "id": "BE-0058",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals"
+  },
+  {
+   "id": "BE-0059",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers"
+  },
+  {
+   "id": "BE-0060",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0061",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds"
+  },
+  {
+   "id": "BE-0062",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds"
+  },
+  {
+   "id": "BE-0063",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0064",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0065",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0066",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers"
+  },
+  {
+   "id": "BE-0067",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0068",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0069",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems"
+  },
+  {
+   "id": "BE-0070",
+   "true": "Exchange Rates & Fees",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees"
+  },
+  {
+   "id": "BE-0071",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds"
+  },
+  {
+   "id": "BE-0072",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0073",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0074",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0075",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account"
+  },
+  {
+   "id": "BE-0076",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account"
+  },
+  {
+   "id": "BE-0077",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0078",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems"
+  },
+  {
+   "id": "BE-0079",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals"
+  },
+  {
+   "id": "BE-0080",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Fraud & Lost Cards"
+  },
+  {
+   "id": "BE-0081",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0082",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds"
+  },
+  {
+   "id": "BE-0083",
+   "true": "Exchange Rates & Fees",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0084",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds"
+  },
+  {
+   "id": "BE-0085",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0086",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0087",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0088",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Fraud & Lost Cards"
+  },
+  {
+   "id": "BE-0089",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account"
+  },
+  {
+   "id": "BE-0090",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0091",
+   "true": "Exchange Rates & Fees",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees"
+  },
+  {
+   "id": "BE-0092",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0093",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account"
+  },
+  {
+   "id": "BE-0094",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals"
+  },
+  {
+   "id": "BE-0095",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers"
+  },
+  {
+   "id": "BE-0096",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0097",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds"
+  },
+  {
+   "id": "BE-0098",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Fraud & Lost Cards"
+  },
+  {
+   "id": "BE-0099",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals"
+  },
+  {
+   "id": "BE-0100",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems"
+  },
+  {
+   "id": "BE-0101",
+   "true": "Exchange Rates & Fees",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees"
+  },
+  {
+   "id": "BE-0102",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers"
+  },
+  {
+   "id": "BE-0103",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0104",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account"
+  },
+  {
+   "id": "BE-0105",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0106",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0107",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0108",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account"
+  },
+  {
+   "id": "BE-0109",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers"
+  },
+  {
+   "id": "BE-0110",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0111",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers"
+  },
+  {
+   "id": "BE-0112",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees"
+  },
+  {
+   "id": "BE-0113",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account"
+  },
+  {
+   "id": "BE-0114",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0115",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers"
+  },
+  {
+   "id": "BE-0116",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers"
+  },
+  {
+   "id": "BE-0117",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0118",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Fraud & Lost Cards"
+  },
+  {
+   "id": "BE-0119",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers"
+  },
+  {
+   "id": "BE-0120",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0121",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0122",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0123",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0124",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals"
+  },
+  {
+   "id": "BE-0125",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees"
+  },
+  {
+   "id": "BE-0126",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0127",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers"
+  },
+  {
+   "id": "BE-0128",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems"
+  },
+  {
+   "id": "BE-0129",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems"
+  },
+  {
+   "id": "BE-0130",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers"
+  },
+  {
+   "id": "BE-0131",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0132",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0133",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems"
+  },
+  {
+   "id": "BE-0134",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account"
+  },
+  {
+   "id": "BE-0135",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Fraud & Lost Cards"
+  },
+  {
+   "id": "BE-0136",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers"
+  },
+  {
+   "id": "BE-0137",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds"
+  },
+  {
+   "id": "BE-0138",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers"
+  },
+  {
+   "id": "BE-0139",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds"
+  },
+  {
+   "id": "BE-0140",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems"
+  },
+  {
+   "id": "BE-0141",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems"
+  },
+  {
+   "id": "BE-0142",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account"
+  },
+  {
+   "id": "BE-0143",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0144",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0145",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account"
+  },
+  {
+   "id": "BE-0146",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0147",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers"
+  },
+  {
+   "id": "BE-0148",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0149",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account"
+  },
+  {
+   "id": "BE-0150",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees"
+  },
+  {
+   "id": "BE-0151",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers"
+  },
+  {
+   "id": "BE-0152",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals"
+  },
+  {
+   "id": "BE-0153",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0154",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account"
+  },
+  {
+   "id": "BE-0155",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees"
+  },
+  {
+   "id": "BE-0156",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0157",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems"
+  },
+  {
+   "id": "BE-0158",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds"
+  },
+  {
+   "id": "BE-0159",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0160",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals"
+  },
+  {
+   "id": "BE-0161",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Fraud & Lost Cards"
+  },
+  {
+   "id": "BE-0162",
+   "true": "Exchange Rates & Fees",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees"
+  },
+  {
+   "id": "BE-0163",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0164",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account"
+  },
+  {
+   "id": "BE-0165",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers"
+  },
+  {
+   "id": "BE-0166",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers"
+  },
+  {
+   "id": "BE-0167",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0168",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds"
+  },
+  {
+   "id": "BE-0169",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account"
+  },
+  {
+   "id": "BE-0170",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems"
+  },
+  {
+   "id": "BE-0171",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0172",
+   "true": "Exchange Rates & Fees",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees"
+  },
+  {
+   "id": "BE-0173",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Fraud & Lost Cards"
+  },
+  {
+   "id": "BE-0174",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0175",
+   "true": "Card Delivery & Activation",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0176",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds"
+  },
+  {
+   "id": "BE-0177",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0178",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Fraud & Lost Cards"
+  },
+  {
+   "id": "BE-0179",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems"
+  },
+  {
+   "id": "BE-0180",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds"
+  },
+  {
+   "id": "BE-0181",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account"
+  },
+  {
+   "id": "BE-0182",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0183",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Fraud & Lost Cards"
+  },
+  {
+   "id": "BE-0184",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Fraud & Lost Cards"
+  },
+  {
+   "id": "BE-0185",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Usage Problems"
+  },
+  {
+   "id": "BE-0186",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Identity & Account"
+  },
+  {
+   "id": "BE-0187",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Fraud & Lost Cards"
+  },
+  {
+   "id": "BE-0188",
+   "true": "Top-ups",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0189",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers"
+  },
+  {
+   "id": "BE-0190",
+   "true": "Identity & Account",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Top-ups"
+  },
+  {
+   "id": "BE-0191",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0192",
+   "true": "Exchange Rates & Fees",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Exchange Rates & Fees"
+  },
+  {
+   "id": "BE-0193",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds"
+  },
+  {
+   "id": "BE-0194",
+   "true": "Transfers",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Transfers"
+  },
+  {
+   "id": "BE-0195",
+   "true": "Cash Withdrawals",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals"
+  },
+  {
+   "id": "BE-0196",
+   "true": "Card Payments & Refunds",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Payments & Refunds"
+  },
+  {
+   "id": "BE-0197",
+   "true": "Fraud & Lost Cards",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Cash Withdrawals"
+  },
+  {
+   "id": "BE-0198",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  },
+  {
+   "id": "BE-0199",
+   "true": "Card Usage Problems",
+   "true_priority": null,
+   "hard": false,
+   "pred": "Card Delivery & Activation"
+  }
+ ]
+}
