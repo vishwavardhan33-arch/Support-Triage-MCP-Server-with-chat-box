@@ -9,3 +9,4 @@ venv/
 .pytest_cache/
 .ruff_cache/
 node_modules/
+data/tickets.runtime.json
