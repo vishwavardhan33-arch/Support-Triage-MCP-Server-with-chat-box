@@ -3382,53 +3382,5 @@
     "status": "open",
     "hard": false,
     "source": "seed"
-  },
-  {
-    "id": "T-1240",
-    "subject": "email verification error",
-    "body": "I am getting an error while verifying my email address, what should i do",
-    "sender": "sandeep",
-    "sender_type": "partner",
-    "reference_id": null,
-    "timestamp": "2026-10-28T06:12:40Z",
-    "category": "Technical / Portal Bug",
-    "priority": "medium",
-    "status": "open",
-    "source": "ui",
-    "triage": {
-      "sentiment": "neutral",
-      "suggested_response": "Thank you for reaching out. We\u2019re sorry you\u2019re experiencing an error while verifying your email. Could you please share a screenshot of the error message and the steps you\u2019ve taken so far? This will help us resolve the issue quickly.",
-      "model": "openai/gpt-oss-20b",
-      "similar_ticket_ids": [
-        "T-1001",
-        "T-1185",
-        "T-1115"
-      ],
-      "classified_at": "2026-10-28T06:12:40Z"
-    }
-  },
-  {
-    "id": "T-1241",
-    "subject": "payout is less",
-    "body": "I got payout of 1 lakh ruppes instead of 1.25 lakhs pls give me all money",
-    "sender": "sandeep",
-    "sender_type": "partner",
-    "reference_id": null,
-    "timestamp": "2026-10-28T06:16:06Z",
-    "category": "Payment Reconciliation",
-    "priority": "high",
-    "status": "open",
-    "source": "ui",
-    "triage": {
-      "sentiment": "frustrated",
-      "suggested_response": "Thank you for bringing this to our attention. We\u2019re looking into the discrepancy in your payout and will update you within the next 24 hours with a resolution. In the meantime, please let us know if you have any additional details that could help us expedite the review.",
-      "model": "openai/gpt-oss-20b",
-      "similar_ticket_ids": [
-        "T-1197",
-        "T-1077",
-        "T-1037"
-      ],
-      "classified_at": "2026-10-28T06:16:07Z"
-    }
   }
 ]
