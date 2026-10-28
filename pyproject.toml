@@ -15,3 +15,9 @@ testpaths = ["tests"]
 
 [tool.vercel]
 entrypoint = "app:app"   # server.py is the MCP server, not the web app
+
+[project]
+dependencies = [
+    "fastapi",
+    "uvicorn",
+]
