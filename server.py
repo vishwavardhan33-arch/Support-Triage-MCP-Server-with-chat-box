@@ -19,6 +19,7 @@ with an ephemeral disk (e.g. Render's free tier) changes are lost on restart/red
 import json
 import os
 import re
+import shutil
 import threading
 import time
 from datetime import datetime, timezone
@@ -31,7 +32,10 @@ import llm
 import triage
 from retrieval import extract_ids, get_index
 
-DATA_PATH = Path(os.environ.get("TICKETS_PATH", Path(__file__).parent / "data" / "tickets.json"))
+# data/tickets.json is the committed seed and is never written to. The live store is a separate file that
+# starts as a copy of the seed (set TICKETS_PATH=/tmp/tickets.json on hosts with a read-only filesystem).
+SEED_PATH = Path(__file__).parent / "data" / "tickets.json"
+DATA_PATH = Path(os.environ.get("TICKETS_PATH", SEED_PATH.with_name("tickets.runtime.json")))
 VALID_STATUSES = {"open", "in_progress", "closed"}
 VALID_SENDER_TYPES = {"customer", "partner"}
 CATEGORIES = triage.HOME_LOAN_CATEGORIES
@@ -49,6 +53,9 @@ REPLACE_RETRIES = 8
 
 def _load_tickets() -> list[dict]:
     with _lock:  # never read while another thread is swapping the file in (Windows refuses that)
+        if not DATA_PATH.exists():  # first use: the live store starts as a copy of the seed
+            DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(SEED_PATH, DATA_PATH)
         with DATA_PATH.open("r", encoding="utf-8") as f:
             return json.load(f)
 
